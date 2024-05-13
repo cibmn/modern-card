@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -135,4 +136,40 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal1</title>
+</head>
+<body>
+    
+    <button onclick="toggleModal()" type="button">Ingresar</button>
+
+    <div class="modal-background" onclick="toggleModal()"></div>
+
+    <div class="modal">
+        <h2>Plataforma</h2>
+        <p>
+            Esta es una ventana modal de bienvenida a una plataforma. Ingresa y descrubre más!
+        </p>
+    </div>
+
+    <script>
+        const toggleModal = () =>{
+            const bodyClassList = document.body.classList;
+            if(bodyClassList.contains("open")){
+                bodyClassList.remove("open");
+                bodyClassList.add("closed");
+            }else{
+                bodyClassList.remove("closed");
+                bodyClassList.add("open");
+            }
+        }
+    </script>
+
+</body>
+>>>>>>> 7e18f2c99785e100dc019c801a2dc6bad9898fd4
 </html>
